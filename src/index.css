@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 27 44% 14%;
+    --foreground: 43 27% 98%;
+    --card: 27 44% 14%;
+    --card-foreground: 43 27% 98%;
+    --popover: 27 44% 14%;
+    --popover-foreground: 43 27% 98%;
+    --primary: 208 17% 64%;
+    --primary-foreground: 27 44% 14%;
+    --secondary: 29 12% 27%;
+    --secondary-foreground: 43 27% 98%;
+    --muted: 29 12% 27%;
+    --muted-foreground: 187 6% 51%;
+    --accent: 208 17% 64%;
+    --accent-foreground: 27 44% 14%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 150 1% 39%;
+    --input: 150 1% 39%;
+    --ring: 208 17% 64%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+    background-color: #322214;
+    color: #FAFAF8;
+  }
+  body {
+    @apply antialiased min-h-screen;
+    background-color: #322214;
+    color: #FAFAF8;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbar matching Webdora Coffee & Taupe palette */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #322214;
+}
+::-webkit-scrollbar-thumb {
+  background: #4C443C;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #636564;
+}
