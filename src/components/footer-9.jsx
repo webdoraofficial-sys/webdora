@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowUpRight, Mail } from 'lucide-react';
 import { socialLinks } from '@/data/socialLinks';
 import { cn } from '@/lib/utils';
+import webdoraLogo from '@/assets/webdora-logo.png';
 
 // Authentic Feather/Lucide-compatible SVGs for social brands
 function InstagramIcon({ className = "h-4 w-4" }) {
@@ -113,7 +114,7 @@ export function Footer9({ onCtaClick }) {
               aria-label="Webdora Home"
             >
               <img
-                src="/images/webdora-logo.png"
+                src={webdoraLogo}
                 alt="Webdora"
                 className="h-8 w-auto max-w-[155px] object-contain"
               />

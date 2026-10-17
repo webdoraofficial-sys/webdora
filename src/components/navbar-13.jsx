@@ -3,6 +3,8 @@ import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import { ArrowRight, Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
+import webdoraLogo from '@/assets/webdora-logo.png';
+import webdoraLogoDark from '@/assets/webdora-logo-dark.png';
 
 const LEFT_NAV_ITEMS = [
   { id: 'overview', label: 'Overview', to: '/', note: 'Studio Flagship & Vision' },
@@ -169,7 +171,7 @@ export function Navbar13({ onCtaClick }) {
               <div className="relative flex items-center justify-center h-9 sm:h-10">
                 {/* State 1: Over Hero (White wordmark + Grey/Cool Steel mark) */}
                 <img
-                  src="/images/webdora-logo.png"
+                  src={webdoraLogo}
                   alt="Webdora"
                   className={cn(
                     "h-8 sm:h-9 md:h-9.5 w-auto max-w-[150px] sm:max-w-[175px] md:max-w-[195px] object-contain transition-opacity duration-300",
@@ -179,7 +181,7 @@ export function Navbar13({ onCtaClick }) {
 
                 {/* State 2: After Hero (Dark Coffee wordmark + Dark Coffee mark on light surface) */}
                 <img
-                  src="/images/webdora-logo-dark.png"
+                  src={webdoraLogoDark}
                   alt="Webdora"
                   className={cn(
                     "h-8 sm:h-9 md:h-9.5 w-auto max-w-[150px] sm:max-w-[175px] md:max-w-[195px] object-contain transition-opacity duration-300",
@@ -261,7 +263,7 @@ export function Navbar13({ onCtaClick }) {
                 className="inline-flex items-center gap-2 py-1"
               >
                 <img
-                  src="/images/webdora-logo.png"
+                  src={webdoraLogo}
                   alt="Webdora"
                   className="h-8 w-auto max-w-[155px] object-contain"
                 />

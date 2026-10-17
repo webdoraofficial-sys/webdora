@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef, useId } from 'react';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import { ArrowRight, Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import webdoraLogo from '@/assets/webdora-logo.png';
 
 const NAV_ITEMS = [
   { id: 'overview', label: 'Overview', href: '#' },
@@ -79,7 +80,7 @@ export function Navbar12({ onCtaClick }) {
           aria-label="Webdora Home"
         >
           <img
-            src="/images/webdora-logo.png"
+            src={webdoraLogo}
             alt="Webdora"
             className="h-7 sm:h-8 w-auto max-w-[130px] sm:max-w-[155px] object-contain transition-opacity duration-150 hover:opacity-90"
           />
@@ -175,7 +176,7 @@ export function Navbar12({ onCtaClick }) {
               <div className="flex items-center justify-between pb-3 border-b border-[#636564]/50">
                 <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="inline-flex py-1 px-1">
                   <img
-                    src="/images/webdora-logo.png"
+                    src={webdoraLogo}
                     alt="Webdora"
                     className="h-7 w-auto max-w-[130px] object-contain"
                   />

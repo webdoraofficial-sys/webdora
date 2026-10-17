@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, useReducedMotion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, CheckCircle2, AlertCircle, Sparkles, Send, ShieldCheck } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import webdoraLogo from '@/assets/webdora-logo.png';
 
 // Authentic Tech Logo Icons
 function Html5Icon() {
@@ -52,7 +53,7 @@ function WebdoraBrandIcon() {
   return (
     <div className="flex items-center justify-center h-full w-full p-2">
       <img
-        src="/images/webdora-logo.png"
+        src={webdoraLogo}
         alt="Webdora"
         className="h-6 w-auto max-w-[85px] object-contain"
       />
@@ -445,7 +446,7 @@ export function Waitlist1() {
               <div className="mt-4 pt-3 border-t border-[#E5E7EB] w-full flex items-center justify-center gap-2">
                 <span className="text-xs text-[#7C898B]">Official studio branding:</span>
                 <img
-                  src="/images/webdora-logo.png"
+                  src={webdoraLogo}
                   alt="Webdora"
                   className="h-5 w-auto object-contain"
                 />
