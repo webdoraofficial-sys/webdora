@@ -33,6 +33,8 @@ jobs:
 
       - name: Build production application
         run: npm run build
+        env:
+          VITE_BASE_PATH: /webdora/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
